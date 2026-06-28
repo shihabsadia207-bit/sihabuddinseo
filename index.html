@@ -1,0 +1,1140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MD Shihab Uddin | Business Growth SEO Strategist & Technical SEO Expert</title>
+  <meta name="description" content="MD Shihab Uddin is an SEO specialist from Rajshahi, Bangladesh helping businesses grow through search engine optimization, technical SEO, and website traffic growth." />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #08101f;
+      --panel: rgba(15, 23, 42, 0.84);
+      --surface: rgba(18, 28, 48, 0.80);
+      --text: #eef2ff;
+      --muted: #abb7cc;
+      --accent: #a78bfa;
+      --accent2: #38bdf8;
+      --border: rgba(255, 255, 255, 0.12);
+      --shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.18), transparent 30%),
+                  radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.14), transparent 28%),
+                  linear-gradient(180deg, #0d172a 0%, #12213d 100%);
+      color: var(--text);
+      background-attachment: fixed;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 1.5rem 0 4rem;
+      background: rgba(10, 18, 34, 0.45);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 36px;
+      box-shadow: 0 25px 80px rgba(0,0,0,0.18);
+      backdrop-filter: blur(20px);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: #c084fc;
+      text-shadow: 0 0 18px rgba(192, 132, 252, 0.35);
+    }
+
+    .brand-logo {
+      width: 2.2rem;
+      height: 2.2rem;
+      object-fit: contain;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+      background: rgba(255,255,255,0.05);
+      padding: 0.25rem;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(11, 18, 32, 0.82);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: #c084fc;
+      text-shadow: 0 0 18px rgba(192, 132, 252, 0.35);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.3rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #8b5cf6, #38bdf8);
+      color: #0f172a;
+      font-weight: 600;
+      border: 1px solid transparent;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 2rem;
+      align-items: center;
+      margin-top: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -6rem;
+      right: -6rem;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(56,189,248,0.28), transparent 60%);
+      filter: blur(30px);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -4rem;
+      left: -4rem;
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(167,139,250,0.18), transparent 60%);
+      filter: blur(24px);
+      pointer-events: none;
+    }
+
+    .hero-copy {
+      max-width: 680px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 1rem;
+      border-radius: 999px;
+      background: rgba(124, 58, 237, 0.18);
+      color: #eef2ff;
+      font-size: 0.92rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(167, 139, 250, 0.24);
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2.7rem, 5vw, 4.75rem);
+      line-height: 1.02;
+      letter-spacing: 0.025em;
+      background: linear-gradient(90deg, #8b5cf6, #38bdf8);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 24px rgba(56, 189, 248, 0.2);
+    }
+
+    .hero p {
+      margin: 1.75rem 0 0;
+      color: #d1d9ed;
+      font-size: 1.08rem;
+      line-height: 1.75;
+      max-width: 45rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.75rem;
+    }
+
+    .stat-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      border-radius: 22px;
+      padding: 1rem 1.2rem;
+      display: grid;
+      gap: 0.45rem;
+      text-align: center;
+      color: #e2e8f0;
+    }
+
+    .stat-card strong {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .stat-card span {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 1.6rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 600;
+      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+    }
+
+    .button-primary {
+      background: linear-gradient(135deg, #8b5cf6, #38bdf8);
+      color: #0f172a;
+      box-shadow: 0 20px 40px rgba(56, 189, 248, 0.2);
+    }
+
+    .button-primary:hover {
+      box-shadow: 0 25px 55px rgba(56, 189, 248, 0.35);
+    }
+
+    .button-secondary {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(148, 163, 184, 0.2);
+      color: #e2e8f0;
+      backdrop-filter: blur(10px);
+    }
+
+    .button-secondary:hover {
+      background: rgba(255,255,255,0.12);
+      box-shadow: 0 20px 40px rgba(56, 189, 248, 0.14);
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .hero-card {
+      background: rgba(15, 23, 42, 0.58);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 32px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(20px);
+      overflow: hidden;
+    }
+
+    .hero-card h2 {
+      margin: 0 0 1rem;
+      font-size: 1.2rem;
+      color: #e2e8f0;
+    }
+
+    .hero-card ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .hero-card li {
+      display: flex;
+      gap: 0.75rem;
+      color: var(--muted);
+    }
+
+    .hero-card li::before {
+      content: "•";
+      color: #38bdf8;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 28px;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .section {
+      margin-top: 4rem;
+      padding: 3rem 0;
+      border-top: 1px solid rgba(148, 163, 184, 0.12);
+    }
+
+    .section h2 {
+      margin: 0;
+      font-size: clamp(1.9rem, 2.4vw, 2.4rem);
+    }
+
+    .section p.lead {
+      max-width: 700px;
+      color: var(--muted);
+      margin-top: 0.85rem;
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .portfolio-grid,
+    .tools-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .portfolio-card {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .portfolio-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .portfolio-value {
+      margin: 0;
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: #eef2ff;
+      letter-spacing: -0.03em;
+    }
+
+    .trusted-row {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding: 1.4rem 0;
+      align-items: center;
+      color: var(--muted);
+    }
+
+    .trusted-row strong {
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #cbd5e1;
+    }
+
+    .trusted-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .trusted-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #e2e8f0;
+      font-size: 0.88rem;
+      letter-spacing: 0.01em;
+    }
+
+    .card, .portfolio-card, .timeline-card,
+    .tool-item, .process-step, .testimonial, .contact-card, .hero-card {
+      background: rgba(15, 23, 42, 0.58);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 28px;
+      padding: 1.85rem;
+      min-height: 220px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06), 0 10px 40px rgba(0,0,0,0.12);
+      backdrop-filter: blur(20px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .tool-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.2rem 1.3rem;
+      border-radius: 24px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--text);
+      min-height: auto;
+    }
+
+    .card:hover, .portfolio-card:hover, .timeline-card:hover,
+    .tool-item:hover, .process-step:hover, .testimonial:hover, .contact-card:hover, .hero-card:hover {
+      transform: translateY(-6px);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08), 0 20px 50px rgba(0,0,0,0.18);
+      border-color: rgba(255,255,255,0.18);
+    }
+
+    .tool-icon {
+      width: 3rem;
+      height: 3rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      border: 1px solid rgba(56, 189, 248, 0.22);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.75rem;
+    }
+
+    .process-step {
+      padding: 1.4rem;
+      border-radius: 28px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .process-step span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.7rem;
+      height: 2.7rem;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.18);
+      color: #38bdf8;
+      font-weight: 700;
+    }
+
+    .process-step h3 {
+      margin: 0;
+      font-size: 1rem;
+      letter-spacing: 0.01em;
+    }
+
+    .process-step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .timeline {
+      position: relative;
+      margin-top: 2rem;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 1.1rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: rgba(56, 189, 248, 0.18);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+      margin-bottom: 1.2rem;
+      border-radius: 28px;
+      background: rgba(15, 23, 42, 0.58);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(20px);
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: 0.3rem;
+      top: 1.5rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #8b5cf6, #38bdf8);
+      box-shadow: 0 0 0 8px rgba(56, 189, 248, 0.08);
+    }
+
+    .timeline-item strong {
+      display: block;
+      font-size: 1rem;
+      color: #eef2ff;
+      margin-bottom: 0.35rem;
+    }
+
+    .timeline-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .section {
+      margin-top: 5rem;
+      padding: 3.5rem 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      opacity: 0;
+      transform: translateY(24px);
+    }
+
+    .section p.lead {
+      line-height: 1.75;
+      margin-top: 0.85rem;
+    }
+
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section.fade-up.visible { animation: fadeUp 0.9s ease-out forwards; }
+    .section.zoom-in.visible { animation: zoomIn 0.9s ease-out forwards; }
+    .section.slide-left.visible { animation: slideLeft 0.9s ease-out forwards; }
+    .section.slide-right.visible { animation: slideRight 0.9s ease-out forwards; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideLeft {
+      from { opacity: 0; transform: translateX(-28px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes slideRight {
+      from { opacity: 0; transform: translateX(28px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .card h3 {
+      margin: 0 0 0.85rem;
+      font-size: 1.05rem;
+      letter-spacing: 0.01em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 1rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(148, 163, 184, 0.14);
+      border-radius: 24px;
+      padding: 1.35rem;
+    }
+
+    .feature-item span {
+      display: inline-flex;
+      width: 2rem;
+      height: 2rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      font-weight: 700;
+    }
+
+    .feature-item div {
+      display: grid;
+      gap: 0.25rem;
+    }
+
+    .feature-item strong {
+      color: #f8fafc;
+    }
+
+    .testimonial-row {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .testimonial {
+      padding: 1.7rem;
+      border-radius: 30px;
+      background: rgba(15, 23, 42, 0.58);
+      border: 1px solid rgba(255,255,255,0.12);
+      min-height: 220px;
+      display: grid;
+      gap: 1rem;
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow);
+    }
+
+    .testimonial p {
+      margin: 0;
+      color: #e2e8f0;
+    }
+
+    .testimonial-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .profile-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      border-radius: 999px;
+      padding: 0.8rem 1rem;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text);
+      margin-top: 1rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 2rem;
+    }
+
+    .contact-card {
+      background: rgba(15, 23, 42, 0.58);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 26px;
+      padding: 1.75rem;
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card strong {
+      display: block;
+      margin-bottom: 0.85rem;
+      color: white;
+    }
+
+    .contact-card a {
+      color: #38bdf8;
+      word-break: break-word;
+    }
+
+    .contact-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+      align-items: start;
+    }
+
+    .contact-image {
+      width: 100%;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,0.08);
+      object-fit: cover;
+      display: block;
+    }
+
+    .contact-form {
+      background: rgba(15, 23, 42, 0.64);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 28px;
+      padding: 2rem;
+      display: grid;
+      gap: 1rem;
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-form label {
+      display: grid;
+      gap: 0.65rem;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 1rem 1rem;
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      font: inherit;
+      outline: none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    .contact-form button {
+      width: fit-content;
+      margin-top: 0.5rem;
+    }
+
+    .contact-form textarea {
+      min-height: 170px;
+      resize: vertical;
+    }
+
+    .social-links {
+      display: inline-flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      width: 2.6rem;
+      height: 2.6rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      transition: transform 0.2s ease, background 0.2s ease;
+      color: var(--text);
+    }
+
+    .social-link:hover {
+      transform: translateY(-2px);
+      background: rgba(56, 189, 248, 0.16);
+    }
+
+    .social-link svg {
+      width: 1.2rem;
+      height: 1.2rem;
+      fill: currentColor;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(148, 163, 184, 0.12);
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      .grid-3,
+      .testimonial-row {
+        grid-template-columns: 1fr;
+      }
+      .contact-block {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <img class="brand-logo" src="logo.png" alt="MD Shihab Uddin logo" />
+        MD Shihab Uddin
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#tools">Tools</a>
+        <a href="#process">Process</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="https://www.linkedin.com/in/sihabuddinseo/" target="_blank">Book Free SEO Audit</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">SEO Specialist for Business Growth</span>
+        <h1>Premium SEO strategy that brings real traffic, higher rankings, and more qualified leads.</h1>
+        <p>Rajshahi-based SEO expert helping brands improve Google visibility, attract search-ready customers, and build a stronger online presence with data-driven SEO.</p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://www.linkedin.com/in/sihabuddinseo/" target="_blank">Book Free SEO Audit</a>
+          <a class="button button-secondary" href="mailto:shihabuddin13323@gmail.com">Email Me</a>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <strong>7+</strong>
+            <span>Years of SEO experience</span>
+          </div>
+          <div class="stat-card">
+            <strong>80+</strong>
+            <span>SEO audit & growth projects</span>
+          </div>
+          <div class="stat-card">
+            <strong>5.0</strong>
+            <span>Client satisfaction rating</span>
+          </div>
+        </div>
+
+        <div class="profile-badge">SEO audit • technical optimization • link building • organic traffic growth</div>
+      </div>
+
+      <div class="hero-card">
+        <img class="profile-image" src=".png" alt="MD Shihab Uddin" />
+        <h2>Quick profile</h2>
+        <ul>
+          <li>SEO Specialist focused on growth-driven organic strategies</li>
+          <li>Experienced with On-Page, Off-Page, Technical SEO, and audits</li>
+          <li>Strong track record with businesses, startups, agencies, and eCommerce</li>
+          <li>Clear communication, research-led planning, and measurable results</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" class="section fade-up">
+      <h2>SEO services</h2>
+      <p class="lead">Custom SEO support designed for business websites that want long-term visibility, higher Google rankings, and better organic performance.</p>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Technical SEO</h3>
+          <p>Fix speed, crawlability, indexation, site structure, and technical issues that block search performance.</p>
+        </div>
+        <div class="card">
+          <h3>On-Page Optimization</h3>
+          <p>Optimize metadata, content, headings, and schema to improve relevance and search visibility.</p>
+        </div>
+        <div class="card">
+          <h3>Off-Page SEO</h3>
+          <p>Build strong backlink profiles and authority that support sustainable ranking growth.</p>
+        </div>
+        <div class="card">
+          <h3>SEO Audit</h3>
+          <p>Full website audit with prioritized recommendations and a clear implementation roadmap.</p>
+        </div>
+        <div class="card">
+          <h3>Keyword Research</h3>
+          <p>Find the best search opportunities and shape your content around high-converting search terms.</p>
+        </div>
+        <div class="card">
+          <h3>Content Optimization</h3>
+          <p>Improve search relevance and user experience with content that converts organic visitors into customers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section zoom-in">
+      <h2>Recent SEO Projects</h2>
+      <p class="lead">Big wins, measurable results, and client work that proves consistent search growth.</p>
+      <div class="grid portfolio-grid">
+        <div class="portfolio-card">
+          <h3>Ecommerce Website</h3>
+          <p class="portfolio-value">+320% Organic Traffic</p>
+          <p>Strong growth from targeted category SEO and optimized shopping experiences.</p>
+        </div>
+        <div class="portfolio-card">
+          <h3>Local Business</h3>
+          <p class="portfolio-value">#1 Google Ranking</p>
+          <p>Local visibility boosted through optimized listings, citations, and targeted local content.</p>
+        </div>
+        <div class="portfolio-card">
+          <h3>SaaS Website</h3>
+          <p class="portfolio-value">185 Keywords Ranked</p>
+          <p>Product-led organic growth with keyword coverage across core landing and feature pages.</p>
+        </div>
+        <div class="portfolio-card">
+          <h3>Blog Growth</h3>
+          <p class="portfolio-value">0 → 40K Monthly Visitors</p>
+          <p>Content strategy and search optimization delivered high-quality traffic in under 12 months.</p>
+        </div>
+      </div>
+      <div class="trusted-row">
+        <strong>Trusted by tools:</strong>
+        <div class="trusted-logos">
+          <span class="trusted-pill">Google Search Console</span>
+          <span class="trusted-pill">Google Analytics</span>
+          <span class="trusted-pill">Ahrefs</span>
+          <span class="trusted-pill">Semrush</span>
+          <span class="trusted-pill">Screaming Frog</span>
+          <span class="trusted-pill">Surfer SEO</span>
+          <span class="trusted-pill">WordPress</span>
+          <span class="trusted-pill">Shopify</span>
+          <span class="trusted-pill">Yoast SEO</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section slide-right">
+      <h2>SEO tools I use</h2>
+      <p class="lead">Trusted tools I use to audit, analyze, and optimize search performance for every website.</p>
+      <div class="grid tools-grid">
+        <div class="tool-item"><span class="tool-icon">GSC</span><strong>Google Search Console</strong></div>
+        <div class="tool-item"><span class="tool-icon">GA</span><strong>Google Analytics</strong></div>
+        <div class="tool-item"><span class="tool-icon">AH</span><strong>Ahrefs</strong></div>
+        <div class="tool-item"><span class="tool-icon">SM</span><strong>Semrush</strong></div>
+        <div class="tool-item"><span class="tool-icon">SF</span><strong>Screaming Frog</strong></div>
+        <div class="tool-item"><span class="tool-icon">SS</span><strong>Surfer SEO</strong></div>
+        <div class="tool-item"><span class="tool-icon">WP</span><strong>WordPress</strong></div>
+        <div class="tool-item"><span class="tool-icon">SH</span><strong>Shopify</strong></div>
+        <div class="tool-item"><span class="tool-icon">YS</span><strong>Yoast SEO</strong></div>
+      </div>
+    </section>
+
+    <section id="process" class="section fade-up">
+      <h2>How I work</h2>
+      <p class="lead">A clear process that turns website research into rankings, traffic, and measurable growth.</p>
+      <div class="process-grid">
+        <div class="process-step"><span>01</span><h3>SEO Audit ↓</h3><p>Technical, content and search visibility review.</p></div>
+        <div class="process-step"><span>02</span><h3>Keyword Research ↓</h3><p>Intent-led keyword discovery for high-value opportunities.</p></div>
+        <div class="process-step"><span>03</span><h3>Strategy ↓</h3><p>Plan a data-backed optimization roadmap aligned with business goals.</p></div>
+        <div class="process-step"><span>04</span><h3>Optimization ↓</h3><p>Implement technical, on-page and off-page improvements.</p></div>
+        <div class="process-step"><span>05</span><h3>Reporting</h3><p>Tracking, analysis and monthly reporting to show performance gains.</p></div>
+      </div>
+    </section>
+
+    <section id="why" class="section slide-left">
+      <h2>Why choose my SEO support</h2>
+      <p class="lead">I combine practical research, transparent communication, and business-first SEO to help websites grow without shortcuts.</p>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Growth-first SEO</h3>
+          <p>Not just rankings — I aim for better traffic quality, lead generation, and commercial impact.</p>
+        </div>
+        <div class="card">
+          <h3>Data-driven process</h3>
+          <p>Every recommendation is based on competitor research, search intent, and site performance data.</p>
+        </div>
+        <div class="card">
+          <h3>Long-term results</h3>
+          <p>Sustainable strategies built to maintain rankings and scale organic visibility over time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section slide-right">
+      <h2>Client reviews</h2>
+      <p class="lead">Feedback from people who improved their SEO, website visibility, and business growth with my support.</p>
+
+      <div class="testimonial-row">
+        <div class="testimonial">
+          <p>“I had the pleasure of learning from MD Shihab. His advice was practical, insightful, and easy to apply. I learned many new strategies I hadn’t considered and now feel much more confident to apply for roles in the GCC.”</p>
+          <div class="testimonial-meta">
+            <span>Fatin Amalina</span>
+            <span>Kuala Lumpur, Malaysia</span>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p>“HIGHLY RECOMMENDED! During our intensive session, he reviewed my LinkedIn profile, resume, and target positions, offering insights tailored to my goals. His holistic approach made a real difference.”</p>
+          <div class="testimonial-meta">
+            <span>Muhammad Yoosufani</span>
+            <span>United States</span>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p>“Knowledgeable, kind, and principled. He understands personal situations and requirements when recommending development goals and strategies.”</p>
+          <div class="testimonial-meta">
+            <span>Vincent von Schilling</span>
+            <span>Sweden</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section fade-up">
+      <h2>Experience timeline</h2>
+      <p class="lead">A premium timeline of my SEO roles and growth-focused experience.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-marker"></span>
+          <strong>2018</strong>
+          <p>Fiverr — Search Engine Optimization Specialist focused on results-driven SEO for growing businesses.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-marker"></span>
+          <strong>2021</strong>
+          <p>Elevate Search UK — Website optimization specialist across technical SEO and organic growth campaigns.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-marker"></span>
+          <strong>2024</strong>
+          <p>CrownPeak Digital UK Ltd. — SEO specialist delivering technical optimization and content strategy for UK clients.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section zoom-in">
+      <h2>Contact</h2>
+      <p class="lead">Ready to improve your website and grow organically? Send a message and let's discuss your next SEO move.</p>
+
+      <div class="contact-block">
+        <form class="contact-form" id="contact-form">
+          <label>
+            Your name
+            <input type="text" name="Name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email address
+            <input type="email" name="Email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Website URL
+            <input type="url" name="Website" placeholder="https://example.com" required />
+          </label>
+          <label>
+            Monthly traffic
+            <input type="text" name="Traffic" placeholder="e.g. 5K visitors" required />
+          </label>
+          <label>
+            Budget
+            <input type="text" name="Budget" placeholder="e.g. $500-$1,000" required />
+          </label>
+          <label>
+            Goal
+            <textarea name="Goal" placeholder="Your main SEO goal" required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send via WhatsApp</button>
+          <p style="color: var(--muted); font-size: 0.95rem; margin: 0.5rem 0 0;">This message opens in WhatsApp so I can reply faster.</p>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>MD Shihab Uddin • SEO Specialist • Rajshahi, Bangladesh</p>
+      <div class="social-links">
+        <a class="social-link" href="https://wa.me/8801762707262" target="_blank" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.9 11.9 0 0 0 12 0C5.37 0 .06 5.31.06 11.94c0 2.1.55 4.16 1.6 5.98L0 24l6.28-1.64a11.87 11.87 0 0 0 5.72 1.47h.01c6.63 0 11.94-5.31 11.94-11.94 0-3.17-1.24-6.14-3.48-8.43zM12 21.4c-1.86 0-3.68-.5-5.25-1.43l-.38-.24-3.73.98.99-3.63-.25-.38A9.34 9.34 0 0 1 2.66 11.94C2.66 6.64 6.7 2.6 12 2.6c2.74 0 5.32 1.07 7.26 3.01 1.94 1.94 3.01 4.52 3.01 7.26 0 5.3-4.04 9.34-9.27 9.34zm5.28-6.74c-.22-.11-1.3-.64-1.5-.72-.2-.08-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.17-.48.06-.22-.11-.93-.34-1.77-1.09-.65-.58-1.08-1.29-1.21-1.51-.13-.22-.01-.34.1-.45.11-.11.24-.28.35-.42.11-.14.15-.24.22-.4.08-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38l-.43-.01c-.15 0-.39.06-.59.28-.2.22-.77.75-.77 1.83 0 1.07.79 2.1.9 2.25.11.15 1.56 2.38 3.77 3.34.53.23.94.37 1.26.47.53.17 1.01.15 1.39.09.42-.07 1.3-.53 1.49-1.04.19-.52.19-.96.13-1.05-.06-.09-.22-.15-.45-.26z"/></svg>
+        </a>
+        <a class="social-link" href="mailto:shihabuddin13323@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4C2.9 4 2 .9 2 2v20c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4.24-8 4.99-8-4.99V6l8 4.99L20 6v2.24zM4 20V8.97l7.1 4.42c.18.11.38.17.6.17s.42-.06.6-.17L20 8.97V20H4z"/></svg>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/sihabuddinseo" target="_blank" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56V14.7c0-1.37-.03-3.12-1.9-3.12-1.9 0-2.19 1.48-2.19 3.01v5.86H9.3V9h3.42v1.56h.05c.48-.9 1.66-1.85 3.42-1.85 3.66 0 4.33 2.41 4.33 5.53v6.76zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM6.95 20.45H3.73V9h3.22v11.45zM22.23 0H1.77C.79 0 0 .78 0 1.75v20.5C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.21 0 22.23 0z"/></svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const form = event.target;
+      const name = encodeURIComponent(form.Name.value.trim());
+      const email = encodeURIComponent(form.Email.value.trim());
+      const website = encodeURIComponent(form.Website.value.trim());
+      const traffic = encodeURIComponent(form.Traffic.value.trim());
+      const budget = encodeURIComponent(form.Budget.value.trim());
+      const goal = encodeURIComponent(form.Goal.value.trim());
+      const text = `Hello Shihab, I am ${name}. My email is ${email}. Website: ${website}. Monthly traffic: ${traffic}. Budget: ${budget}. Goal: ${goal}.`;
+      const phone = '8801762707262';
+      const url = `https://wa.me/${phone}?text=${text}`;
+      window.open(url, '_blank');
+    });
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.section').forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
